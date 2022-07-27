@@ -19,6 +19,9 @@ public class MyFunction {
 
         //call biFunction
         System.out.println("biFunction: " + incrementByOneAndMultiplyBiFunction.apply(2, 100));
+
+        //call biFunction
+        System.out.println("biFuntion:" + addBy2Multiply.apply(2,20));
     }
 
 
@@ -36,4 +39,7 @@ public class MyFunction {
 
     static BiFunction<Integer, Integer, Integer> incrementByOneAndMultiplyBiFunction =
             (numberToIncrementByOne, numberToMultiplyBy) -> (numberToIncrementByOne + 1) * numberToMultiplyBy;
+
+    static BiFunction<Integer,Integer,Integer> addBy2Multiply =
+            (numberToAdd,numberToMultiply) -> (numberToAdd +2) * numberToMultiply;
 }
